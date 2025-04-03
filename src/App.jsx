@@ -32,7 +32,7 @@ function App() {
             {darkMode ? (
               <img src="/images/icon-sun.svg" alt="icon-sun" />
             ) : (
-              <img src="/images/icon-moon.svg" alt="" />
+              <img src="/images/icon-moon.svg" alt="icon-moon" />
             )}
           </button>
         </div>
