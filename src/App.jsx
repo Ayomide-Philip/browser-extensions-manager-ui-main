@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Header from "./componet/header";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -8,7 +9,7 @@ function App() {
       className="h-screen"
       data-theme={darkMode ? "dark" : "light"}
     >
-      <header className="body-font max-w-11/12 justify-center items-center mx-auto  pt-5">
+      {/* <header className="body-font max-w-11/12 justify-center items-center mx-auto  pt-5">
         <div
           className="container mx-auto flex flex-row items-center rounded-2xl pl-3 pr-3"
           style={{ backgroundColor: "var( --heading-background-color)" }}
@@ -36,7 +37,8 @@ function App() {
             )}
           </button>
         </div>
-      </header>
+      </header> */}
+      <Header darkMode={darkMode} setDarkMode={setDarkMode} />
     </div>
   );
 }
