@@ -31,12 +31,18 @@ export default function Card() {
                     <span class="text-3xl font-bold text-black dark:text-black">
                       $599
                     </span>
-                    <button class="button">
-                      <span class="label">+ Add to card</span>
-                      <span class="gradient-container">
-                        <span class="gradient"></span>
-                      </span>
-                    </button>
+                    <label
+                      htmlFor={`toogleButton${item.name}`}
+                      className="relative block h-8 w-14 rounded-full bg-gray-300 transition-colors [-webkit-tap-highlight-color:_transparent] has-checked:bg-green-500"
+                    >
+                      <input
+                        type="checkbox"
+                        id={`toogleButton${item.name}`}
+                        className="peer sr-only"
+                      />
+
+                      <span className="absolute inset-y-0 start-0 m-1 size-6 rounded-full bg-white transition-[inset-inline-start] peer-checked:start-6"></span>
+                    </label>
                   </div>
                 </div>
               </div>
