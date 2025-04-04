@@ -9,14 +9,17 @@ export default function Card() {
         {extension.map((item) => {
           return (
             <div class="animate-in zoom-in duration-200">
-              <div class="ring-1 rounded-lg flex flex-col space-y-2 p-4 break-inside-avoid mb-6 bg-white hover:shadow-md z-0 relative">
+              <div
+                class="ring-1 rounded-lg flex flex-col space-y-2 p-4 break-inside-avoid mb-6 bg-white hover:shadow-md z-0 relative"
+                style={{ backgroundColor: "var(--card-background-color" }}
+              >
                 <div class="flex flex-col break-inside-avoid-page">
                   <div class="flex justify-between">
                     <div class="flex space-x-6">
                       <div class="flex space-x-4 flex-shrink-0 w-80">
                         <img src={item.logo} class="w-15 h-15" />
                         <div>
-                          <div class=" font-extrabold text-2xl">
+                          <div class=" font-extrabold text-2xl dark:text-white">
                             {item.name}
                           </div>
                           <div class="text-2l font-medium text-gray-900 dark:text-black">
@@ -38,7 +41,7 @@ export default function Card() {
                     </button>
                     <label
                       htmlFor={`toogleButton${item.name}`}
-                      className="relative block h-8 w-14 rounded-full bg-gray-300 transition-colors [-webkit-tap-highlight-color:_transparent] has-checked:bg-red-500 focus:border-red-500 focus:outline-none focus:ring-2 focus:ring-red-500"
+                      className="relative block h-8 w-14 rounded-full bg-gray-300 transition-colors [-webkit-tap-highlight-color:_transparent] has-checked:bg-red-500 focus:border-red-500 focus:outline-none"
                     >
                       <input
                         type="checkbox"
