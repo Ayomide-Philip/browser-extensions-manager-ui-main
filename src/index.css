@@ -4,9 +4,11 @@
 [data-theme="dark"] {
     --background-color: hsl(227, 75%, 14%);
     --heading-background-color: hsl(226, 25%, 17%);
+    --card-background-color: hsl(226, 25%, 17%);
 }
 
 [data-theme="light"] {
     --background-color: hsl(217, 61%, 90%);
     --heading-background-color: hsl(0, 0%, 93%);
+    --card-background-color: hsl(0, 0%, 93%);
 }
