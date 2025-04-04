@@ -19,7 +19,7 @@ export default function Card() {
                           <div class=" font-extrabold text-2xl">
                             {item.name}
                           </div>
-                          <div class="text-2l font-semibold text-gray-900 dark:text-black">
+                          <div class="text-2l font-medium text-gray-900 dark:text-black">
                             {item.description}
                           </div>
                         </div>
@@ -28,17 +28,23 @@ export default function Card() {
                   </div>
 
                   <div class="flex items-center justify-between pt-10">
-                    <span class="text-3xl font-bold text-black dark:text-black">
-                      $599
-                    </span>
+                    <button class="inline-block px-7 py-1.5 overflow-hidden text-sm font-semibold transition-transform rounded-full group text text-black bg-white border-2 hover:border-red-500  focus:border-red-500">
+                      <span
+                        before="Remove"
+                        class="relative py-1.5 transition-transform inline-block before:content-[attr(before)] before:py-1.5 before:absolute before:top-full group-hover:-translate-y-full"
+                      >
+                        Remove
+                      </span>
+                    </button>
                     <label
                       htmlFor={`toogleButton${item.name}`}
-                      className="relative block h-8 w-14 rounded-full bg-gray-300 transition-colors [-webkit-tap-highlight-color:_transparent] has-checked:bg-green-500"
+                      className="relative block h-8 w-14 rounded-full bg-gray-300 transition-colors [-webkit-tap-highlight-color:_transparent] has-checked:bg-red-500"
                     >
                       <input
                         type="checkbox"
                         id={`toogleButton${item.name}`}
                         className="peer sr-only"
+                        defaultChecked={item.isActive}
                       />
 
                       <span className="absolute inset-y-0 start-0 m-1 size-6 rounded-full bg-white transition-[inset-inline-start] peer-checked:start-6"></span>
