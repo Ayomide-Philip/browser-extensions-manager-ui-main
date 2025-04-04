@@ -38,7 +38,7 @@ export default function Card() {
                     </button>
                     <label
                       htmlFor={`toogleButton${item.name}`}
-                      className="relative block h-8 w-14 rounded-full bg-gray-300 transition-colors [-webkit-tap-highlight-color:_transparent] has-checked:bg-red-500"
+                      className="relative block h-8 w-14 rounded-full bg-gray-300 transition-colors [-webkit-tap-highlight-color:_transparent] has-checked:bg-red-500 focus:border-red-500 focus:outline-none focus:ring-2 focus:ring-red-500"
                     >
                       <input
                         type="checkbox"
