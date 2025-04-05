@@ -1,4 +1,4 @@
-export default function Header({darkMode, setDarkMode}) {
+export default function Header({ darkMode, setDarkMode }) {
   return (
     <header className="body-font max-w-11/12 justify-center items-center mx-auto  pt-5">
       <div
@@ -7,7 +7,7 @@ export default function Header({darkMode, setDarkMode}) {
       >
         <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
           <img
-            src="/public/images/brand3d_logo-removebg-preview.png"
+            src="/images/brand3d_logo-removebg-preview.png"
             height="70px"
             width="70px"
             alt="brand3d logo"
