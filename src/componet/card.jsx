@@ -22,7 +22,7 @@ export default function Card() {
                           <div class=" font-extrabold text-2xl dark:text-white">
                             {item.name}
                           </div>
-                          <div class="text-2l font-medium text-gray-900 dark:text-black">
+                          <div class="text-2l font-medium text-gray-900 dark:text-white">
                             {item.description}
                           </div>
                         </div>
@@ -31,7 +31,7 @@ export default function Card() {
                   </div>
 
                   <div class="flex items-center justify-between pt-10">
-                    <button class="inline-block px-7 py-1.5 overflow-hidden text-sm font-semibold transition-transform rounded-full group text text-black bg-white border-2 hover:border-red-500  focus:border-red-500">
+                    <button class="inline-block px-7 py-1.5 overflow-hidden text-sm font-semibold transition-transform rounded-full group text text-black dark:text-white border-2 hover:border-red-500  focus:border-red-500">
                       <span
                         before="Remove"
                         class="relative py-1.5 transition-transform inline-block before:content-[attr(before)] before:py-1.5 before:absolute before:top-full group-hover:-translate-y-full"
