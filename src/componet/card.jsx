@@ -2,9 +2,24 @@ import extension from "../data.js";
 export default function Card() {
   return (
     <div class="container mx-auto max-w-6xl p-4">
-      <h3 class="text-black dark:text-white py-6 text-3xl text-center font-bold">
-        Popular Tweets
-      </h3>
+      <div class="flex flex-col md:flex-row items-center justify-between mb-4">
+        <div>
+          <h3 class="text-black dark:text-white py-6 text-3xl text-center font-bold">
+            Popular Tweets
+          </h3>
+        </div>
+        <div>
+          <button class="px-8 py-4 border-2 ml-2 mr-2 hover:bg-[#BF231F] text-dark  dark:text-white font-bold rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg">
+            All
+          </button>
+          <button class="px-8 py-4 border-2 ml-2 mr-2 hover:bg-[#BF231F] text-dark  dark:text-white font-bold rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg">
+            Active
+          </button>
+          <button class="px-8 py-4 border-2 ml-2 mr-2 hover:bg-[#BF231F] text-dark  dark:text-white font-bold rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg">
+            Inactive
+          </button>
+        </div>
+      </div>
       <div class="md:columns-2 lg:columns-3 gap-6 p-4 sm:p-1 mt-2">
         {extension.map((item) => {
           return (
