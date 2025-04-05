@@ -2,13 +2,13 @@
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 [data-theme="dark"] {
-    --background-color: hsl(227, 75%, 14%);
-    --heading-background-color: hsl(226, 25%, 17%);
-    --card-background-color: hsl(226, 25%, 17%);
+    --background-color: #091239;
+    --heading-background-color: #1F2535;
+    --card-background-color: #1F2535;
 }
 
 [data-theme="light"] {
-    --background-color: hsl(217, 61%, 90%);
+    --background-color: #EBF4FB;
     --heading-background-color: hsl(0, 0%, 93%);
-    --card-background-color: hsl(0, 0%, 93%);
+    --card-background-color: #FCFDFF;
 }
