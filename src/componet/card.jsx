@@ -5,7 +5,7 @@ export default function Card() {
       <div class="flex flex-col md:flex-row items-center justify-between mb-4">
         <div>
           <h3 class="text-black dark:text-white py-6 text-3xl text-center font-bold">
-            Popular Tweets
+            Extension List
           </h3>
         </div>
         <div>
