@@ -2,7 +2,7 @@ import extension from "../data.js";
 export default function Card() {
   return (
     <div class="container mx-auto max-w-6xl p-4">
-      <h3 class="text-gray-800 py-6 text-3xl text-center font-bold">
+      <h3 class="text-black dark:text-white py-6 text-3xl text-center font-bold">
         Popular Tweets
       </h3>
       <div class="md:columns-2 lg:columns-3 gap-6 p-4 sm:p-1 mt-2">
@@ -31,7 +31,7 @@ export default function Card() {
                   </div>
 
                   <div class="flex items-center justify-between pt-10">
-                    <button class="inline-block px-7 py-1.5 overflow-hidden text-sm font-semibold transition-transform rounded-full group text text-black dark:text-white border-2 hover:border-red-500  focus:border-red-500">
+                    <button class="inline-block px-7 py-1.5 overflow-hidden text-sm font-semibold transition-transform rounded-full group text text-black dark:text-white border-2 hover:border-red-500  focus:border-red-500 cursor-pointer">
                       <span
                         before="Remove"
                         class="relative py-1.5 transition-transform inline-block before:content-[attr(before)] before:py-1.5 before:absolute before:top-full group-hover:-translate-y-full"
